@@ -42,8 +42,8 @@ def _getargs___arg_parser(config, vlanmap):
 def getfilenames():
     global args
     parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
-                                     description="Cisco Configuration Analysis Tool",
-                                     epilog='Usage example:\n  ccat  smth/config_folder -vlanmap smth/vlanmap_file')
+    #                                 description="Cisco Configuration Analysis Tool",
+                                     epilog='Usage example:\n  dp.py  smth/config_folder -vlanmap smth/vlanmap_file')
     parser.add_argument("configs", type=str, nargs='?', default=0, help="full path to the configuration file or folder with config(s)")
     parser.add_argument("-vlanmap", type=str, help="path to vlanmap (file that determine how critical is certain vlan, you can find example in 'example' folder)")
     parser.add_argument("-output", type=str, help="path to output html files directory")
