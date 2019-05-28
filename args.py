@@ -58,7 +58,7 @@ def getfilenames():
     graph_group.add_argument("--graph", type=str, nargs='?', default=0, help="left the argument empty to get into interactive mode or define a file name for graph output in png extension")
     args = parser.parse_args()
     if not(args.configs):
-        print ('Usage example:\n  ccat  smth/config_folder -vlanmap smth/vlanmap_file\n\nFor more details try --help')
+        print ('Usage example:\n  dp.py  smth/config_folder -vlanmap smth/vlanmap_file\n\nFor more details try --help')
         exit()
     if args.no_console_display and not args.output and args.graph == 0:
         print('\nYou should define html files directory with -output key OR use --graph key to use this options\n\nFor more details try --help')
